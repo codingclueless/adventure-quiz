@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+@font-face {
+    font-family: 'Skyfont';
+    src: url(../assets/skyfont.regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'airamerica';
+    src: url(../assets/AirAmerica-Regular.otf);
+}
+
+html { 
+        background: url(../assets/airplane-sunset.jpg) no-repeat center center fixed; 
+        background-size: cover;
+}
+
+body {
+    font-family: 'Noto Serif';
+    text-align: center;
+   
+}
+
+#plane {
+    max-width: 250px;
+}
+
+h1 {
+    font-family: Skyfont;
+    font-size: 100px;
+    
+}
+
+h2 {
+    font-family: 'airamerica'
+}
+
+legend {
+    font-family: 'Skyfont';
+    font-size: 36px;
+    
+}
+
+/*form css*/
+form {
+  border: 1px solid black;
+    
+}
+
+#passenger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+
+form img {
+    max-height: 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+      
+    
+}
