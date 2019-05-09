@@ -1,0 +1,50 @@
+header {
+    display:flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.header-div-1 {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    width: 150px;
+    height: 150px;
+    font-family: 'airamerica';
+    font-size: 35px;
+    background-color: rgba(14, 1, 1, 0.5);
+    padding: 50px;
+    color: white;
+    text-shadow: 0 0 5px rgb(221, 94, 25);
+    border: 10px solid rgb(163, 160, 160);
+}
+
+.header-div-1  img {
+    height: 150px;
+}
+
+.header-div-3 {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    font-family: 'airamerica';
+    font-size: 30px;
+    background-color: rgba(14, 1, 1, 0.5);
+    padding: 50px;
+    color: white;
+    text-shadow: 0 0 5px rgb(221, 94, 25);
+    border: 10px solid rgb(163, 160, 160);
+}
+
+#map-image {
+    display: inline-block;
+    background-color: rgba(14, 1, 1, 0.5);
+    padding: 20px;
+    color: white;
+    border: 10px solid rgb(163, 160, 160);
+}
+

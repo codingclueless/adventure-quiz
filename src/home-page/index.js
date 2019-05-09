@@ -10,4 +10,6 @@ createPassenger.addEventListener('submit', event => {
     const passenger = makePassenger(formData);
 
     api.signUp(passenger);
-})
+
+    window.location = '../../map.html';
+});
