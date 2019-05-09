@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/main.css">
+    <title>The Layover!</title>
+</head>
+<body>
+    <header>
+        <h1>The layover</h1>
+        <h2 id="trapped">-Trapped in terminal 4-</h2>
+    </header>
+    <main class="form-main">
+            <h3>
+                How long will your patience last?
+            </h3>
+            <form id="create-passenger" >
+                <h2 id="create-pass-h2">Create Boarding Pass:</h2>
+                <p class="flight-section">
+                    <label for="flight">Flight Destination:</label>
+                    <input id="flight" type="text" name="flight" required>
+                </p>
+                
+                <fieldset>
+                    <legend>Passenger/Type</legend>
+                    <p id="avatars">
+                        <div class="passengers-css">
+                            <label for="business-man">
+                                <input id="business-man" type="radio" name="passenger" required value="business-man">
+                                <img src="./assets/business-man.png" alt="business man icon">
+                                Petyr <span class="character-type">(Business Man)</span>
+                            </label>
+                        </div>
+                        <div class="passengers-css">
+                            <label for="old-lady">
+                                <input id="old-lady" type="radio" name="passenger" required value="old-lady">
+                                <img src="./assets/old-lady.png" alt="old lady icon">
+                                Gladys <span class="character-type">(Grandma)</span>
+                            </label>
+                        </div>
+                        <div class="passengers-css">
+                            <label for="stressed-mom">
+                                <input id="stressed-mom" type="radio" name="passenger" required value="stressed-mom">
+                                <img src="./assets/stressed-mom.png" alt="stressed mom icon">
+                                Sybil <span class="character-type">(Stressed Mother)</span>
+                            </label>
+                        </div>
+                        <div class="passengers-css">
+                            <label for="backpacker">
+                                <input id="backpacker" type="radio" name="passenger" required value="backpacker">
+                                <img src="./assets/backpacker.png" alt="backpacker icon">
+                                Bernard <span class="character-type">(Young backpacker)</span> 
+                            </label>
+                        </div>
+                    </p>
+                </fieldset>
+                <button id="form-button">Start your Layover!</button>
+            </form>
+        </main>
+        <script type="module" src="./src/home-page/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+@font-face {
+    font-family: 'Skyfont';
+    src: url(../assets/skyfont.regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: 'airamerica';
+    src: url(../assets/AirAmerica-Regular.otf);
+}
+/* end of fonts */
+
+html { 
+        background: url(../assets/airplane-sunset.jpg) no-repeat center center fixed; 
+        background-size: cover;
+}
+
+body {
+    font-family: 'Noto Serif';
+    text-align: center;
+   
+}
+
+h1 {
+    font-family: Skyfont;
+    font-size: 100px;
+    text-shadow: 0 0 20px white;
+    margin-bottom: -15px;
+}
+
+
+
+h2 {
+    font-family: 'airamerica';
+    stroke: white;
+    text-shadow: 0 0 20px white;
+}
+
+h3 {
+    font-family: 'airamerica';
+    stroke: white;
+    text-shadow: 0 0 20px white;
+}
+
+#trapped {
+    font-size: 30px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+legend {
+    font-family: 'Skyfont';
+    font-size: 36px;
+    
+}
+
+/*form css*/
+form {
+    display: inline-block;
+    background-color: rgba(14, 1, 1, 0.75);
+    padding: 50px;
+    font-family: 'Alice', serif;
+    color: white;
+    text-shadow: 0 0 5px rgb(221, 94, 25);
+    font-size: 20px;
+    border: 10px solid rgb(163, 160, 160);
+}
+
+#create-pass-h2 {
+    margin-top: -20px;
+
+}
+
+.passengers-css {
+    text-align: left;
+    padding: 10px;
+}
+
+form img {
+    max-height: 100px;
+}
+
+/* form button */
+#form-button {
+    border-top: 1px solid #030608;
+    background: #030a0f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e4ebf0), to(#030a0f));
+    background: -webkit-linear-gradient(top, #e4ebf0, #030a0f);
+    background: -moz-linear-gradient(top, #e4ebf0, #030a0f);
+    background: -ms-linear-gradient(top, #e4ebf0, #030a0f);
+    background: -o-linear-gradient(top, #e4ebf0, #030a0f);
+    padding: 6px 14px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 13px;
+    font-family: Georgia, Serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-bottom: -25px;
+    }
+ #form-button:hover {
+    border-top-color: #d6571c;
+    background: #d6571c;
+    color: #f7f7f7;
+    opacity: 0.7;
+    }
+ #form-button:active {
+    border-top-color: #01060a;
+    background: #01060a;
+    }
+
+    /*character span in name */
+.character-type {
+        font-size: 12px;
+    }
