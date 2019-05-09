@@ -6,7 +6,7 @@ function makePassenger(formData) {
         perks: 0,
         completed: {}
     };
-   
+    
     return passenger;
 }
 
