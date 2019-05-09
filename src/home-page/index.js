@@ -1,4 +1,5 @@
 import makePassenger from './make-passenger.js';
+import api from '../services/api.js';
 
 const createPassenger = document.getElementById('create-passenger');
 
@@ -8,5 +9,5 @@ createPassenger.addEventListener('submit', event => {
     const formData = new FormData(createPassenger);
     const passenger = makePassenger(formData);
 
-    console.log(passenger);
+    api.signUp(passenger);
 })

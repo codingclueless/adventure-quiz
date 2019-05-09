@@ -1,22 +1,9 @@
 const test = QUnit.test;
+import api from '../src/services/api.js';
 
 QUnit.testStart(() => {
     sessionStorage.clear();
 });
-
-const api = {
-    storage: localStorage,
-    signUp(passenger) {
-        const json = JSON.stringify(passenger);
-        api.storage.setItem('passenger', json);
-    },
-    getPassenger() {
-        const json = api.storage.getItem('passenger');
-        const passenger = JSON.parse(json);
-        return passenger;
-    },
-};
-
 
 api.storage = sessionStorage;
 
