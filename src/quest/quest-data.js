@@ -130,3 +130,7 @@ const quest4 = {
         perks: ''
     }]
 };
+
+const quests = [quest1, quest2, quest3, quest4];
+
+export default quests;
