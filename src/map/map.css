@@ -48,3 +48,8 @@ header {
     border: 10px solid rgb(163, 160, 160);
 }
 
+#gif {
+    height: 100px;
+    width: auto;
+}
+
