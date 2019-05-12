@@ -10,7 +10,7 @@ test('creates correct quest link html', function(assert) {
         title: 'Gate change...What?!',
     };
 
-    const expected = '<a href="./quest.html?id=gate-quest">gate quest</a>';
+    const expected = '<a href="./quest.html?id=gate-quest">Gate change...What?!</a>';
 
     //Act 
     // Call the function you're testing and set the result to a const
