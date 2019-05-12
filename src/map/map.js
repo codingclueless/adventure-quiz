@@ -1,17 +1,15 @@
 import api from '../services/api.js';
+import loadProfile from '../load-profile.js';
+import createQuestLink from '../quest/create-quest-link.js';
 
-const flight = document.getElementById('passenger-destination');
-const passenger = document.getElementById('passenger-icon');
-const patience = document.getElementById('patience');
-const perks = document.getElementById('perks');
+loadProfile();
 
-const passengerInfo = api.getPassenger();
+const map = document.getElementById('quests');
+const questData = api.getQuests();
 
-if(!passengerInfo) {
-    window.location = './';
+for(let i = 0; i < questData.length; i++) {
+    const quest = questData[i];
+
+    map.appendChild(createQuestLink(quest));
+    
 }
-
-flight.textContent = passengerInfo.flight;
-passenger.src = './assets/' + passengerInfo.passenger + '.png';
-patience.textContent = passengerInfo.patience;
-perks.textContent = passengerInfo.perks;

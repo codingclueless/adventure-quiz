@@ -4,7 +4,7 @@ function createQuestLink(quest) {
     const searchParams = new URLSearchParams();
     searchParams.set('id', quest.id);
     link.href = './quest.html?' + searchParams.toString();
-    link.textContent = 'Gate change...What?!';
+    link.textContent = quest.title;
     return link;
 }
 
