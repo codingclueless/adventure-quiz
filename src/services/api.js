@@ -1,3 +1,5 @@
+import quests from '../quest/quest-data.js';
+
 const api = {
     storage: localStorage,
     signUp(passenger) {
@@ -9,6 +11,9 @@ const api = {
         const passenger = JSON.parse(json);
         return passenger;
     },
+    getQuests() {
+        return quests;
+    }
 };
 
 export default api; 
