@@ -1,15 +1,15 @@
+import loadProfile from '../load-profile.js';
 import api from '../services/api.js';
 import createChoice from './create-choice.js';
-import loadProfile from '../load-profile.js';
 import scoreQuest from '../quest/score-quest.js';
 
 loadProfile();
 
 const choicesParentNode = document.getElementById('choices');
-const questTitle = document.getElementById('title');
-const questImage = document.getElementById('image');
-const questDescription = document.getElementById('description');
+const questTitle = document.getElementById('quest-title');
+const questImage = document.getElementById('quest-image');
 const choiceForm = document.getElementById('choice-form');
+const questDescription = document.getElementById('quest-description');
 const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 
@@ -17,7 +17,7 @@ const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 
 const questData = api.getQuest(id);
-const user = api.getUser();
+const user = api.getPassenger();
 
 questTitle.textContent = questData.title;
 questImage.src = './assets/' + questData.image;

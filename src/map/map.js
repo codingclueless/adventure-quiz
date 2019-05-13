@@ -7,7 +7,7 @@ loadProfile();
 
 const map = document.getElementById('quests');
 const questData = api.getQuests();
-const user = api.getUser();
+const user = api.getPassenger();
 
 for(let i = 0; i < questData.length; i++) {
     const quest = questData[i];
