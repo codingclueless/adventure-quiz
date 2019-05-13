@@ -9,7 +9,7 @@ createPassenger.addEventListener('submit', event => {
     const formData = new FormData(createPassenger);
     const passenger = makePassenger(formData);
 
-    api.signUp(passenger);
+    api.saveUser(passenger);
 
     window.location = '../../map.html';
 });

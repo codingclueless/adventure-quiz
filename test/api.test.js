@@ -20,7 +20,7 @@ test('saves and gets sign up data', function(assert) {
     };
     //Act 
     // Call the function you're testing and set the result to a const
-    api.signUp(passenger);
+    api.saveUser(passenger);
     const result = api.getPassenger();
     //Assert
     assert.deepEqual(result, passenger);

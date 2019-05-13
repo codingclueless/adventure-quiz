@@ -2,7 +2,7 @@ import quests from '../quest/quest-data.js';
 
 const api = {
     storage: localStorage,
-    signUp(passenger) {
+    saveUser(passenger) {
         const json = JSON.stringify(passenger);
         api.storage.setItem('passenger', json);
     },
