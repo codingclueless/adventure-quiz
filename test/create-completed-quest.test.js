@@ -9,7 +9,7 @@ test('create completed quest element', function(assert) {
         title: 'Gate change...What?!',
     };
 
-    const expected = '<span>Gate change...What?!</span>';
+    const expected = '<span class="completed-span">Gate change...What?!</span>';
 
     //Act 
     // Call the function you're testing and set the result to a const
