@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/map/map.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-div-1">
+            <span id="passenger-destination">PDX - LAX</span>
+            <br>
+            <img id="passenger-icon" alt="passenger-icon">
+        </div>
+        <div>
+            <h1>The layover</h1>
+            <h2 id="trapped">-Trapped in terminal 4-</h2>
+        </div>
+        <div class="header-div-3">
+            Patience: <span id="patience"></span>
+            <br>
+            Perks: <span id="perks"></span>
+        </div>
+    </header>
+    <main>
+        <h2>
+            Test your Patience
+        </h2>
+        <h3>
+            Pick a Problem:
+        </h3>
+        <div id="quests">
+            <img id="map-image" src="./assets/terminal-image.png" alt="Image of map">
+            <!-- <a class="quest" id="phone-quest" href="quest.html?id=phone-quest">phone quest</a>
+            <a class="quest" id="bar-quest" href="quest.html?id=bar-quest">bar quest</a>
+            <a class="quest" id="kid-quest" href="quest.html?id=kid-quest">kid quest</a>
+            <a class="quest" id="gate-quest" href="quest.html?id=gate-quest">gate quest</a> -->
+        </div>
+    </main>
+    <script type="module" src="src/map/map.js"></script>
+</body>
+</html>
