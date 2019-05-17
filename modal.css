@@ -1,0 +1,79 @@
+/* for a different project */
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    padding: 2rem 1.5rem;
+    /* height:75%;
+    width: 75%; */
+    border-radius: 0.5rem;
+    opacity: .75;
+    align-items: center;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-flex {
+    display: flex;
+    flex-direction: row;
+    height:70%;
+    width: auto;
+}
+
+#kim-jong {
+    position: absolute;
+    z-index: 1;
+    /* left:50%;
+    top:30%; */
+    width: 50vw;
+    height: 50vh;
+    max-height: 500px;
+    max-width: ;
+}
+
+#modal-text {
+    text-align: center;
+    position: absolute;
+    z-index: 4;
+    /* top: 25vw;
+    left: 25vw; */
+    
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20vw;
+
+}
+
+#bomb-1 {
+    position: absolute;
+    z-index: 2;
+
+}
+
+#bomb-2 {
+    position: absolute;
+    z-index: 3;
+    
+}
+
+
